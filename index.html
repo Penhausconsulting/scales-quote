@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Get a price | Scales General Contracting</title>
+<meta name="description" content="Photograph the space, get a price range in a minute, and Tommy calls you to confirm. Grab bars, rails, ramps, bathroom safety, roofing, decks, plumbing, electrical. Hartford CT. HIC-LIC #0552366.">
+<meta name="theme-color" content="#12100e">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#12100e;--paper:#faf7f2;--line:#e4ddd2;--mute:#6d675f;--amber:#c8862a;--deep:#1c1917}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16.5px/1.6 Inter,system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,.mark{font-family:"Archivo Black",Inter,sans-serif;letter-spacing:-.4px;line-height:1.1}
+.wrap{max-width:620px;margin:0 auto;padding:0 18px 60px}
+header{padding:18px 0 6px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.mark{font-size:20px}.mark small{display:block;font-family:Inter;font-size:9.5px;letter-spacing:2.2px;text-transform:uppercase;color:var(--mute);font-weight:700;margin-top:2px}
+.callbtn{background:var(--deep);color:#fff;text-decoration:none;padding:11px 15px;border-radius:9px;font-weight:700;font-size:14px;white-space:nowrap}
+h1{font-size:clamp(27px,7vw,38px);margin:14px 0 10px}
+h1 em{font-style:normal;color:var(--amber)}
+.sub{color:#3a352f;margin:0 0 22px;font-size:16.5px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:16px}
+label{display:block;font-size:12px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--mute);margin-bottom:6px}
+input,select,textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:9px;font:inherit;background:#fff;color:var(--ink)}
+textarea{min-height:84px;resize:vertical}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.field{margin-bottom:14px}
+.hint{font-size:13px;color:var(--mute);margin:6px 0 0}
+.shot{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+.shot label.pick{flex:1;min-width:130px;border:1.5px dashed #c9bfae;border-radius:10px;padding:16px 10px;text-align:center;font-size:13.5px;font-weight:600;color:var(--mute);cursor:pointer;text-transform:none;letter-spacing:0;margin:0}
+.shot input{display:none}
+.thumbs{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.thumbs img{width:74px;height:74px;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
+button{width:100%;background:var(--amber);color:#12100e;border:0;padding:16px;border-radius:10px;font-weight:800;font-size:16px;cursor:pointer;margin-top:4px}
+button:disabled{opacity:.55}
+.out{display:none;margin-top:16px;border-radius:14px;padding:20px;background:var(--deep);color:#f6f2ec}
+.out.on{display:block}
+.out .amt{font-family:"Archivo Black";font-size:31px;margin:4px 0 10px;color:#fff}
+.out p{margin:0 0 10px;color:#c9c2b8;font-size:15px}
+.out a{color:#f0c98a;font-weight:700}
+.err{color:#b3261e;font-size:14px;margin-top:10px;display:none}
+.guide{background:#f2ece2;border-radius:12px;padding:16px;margin-bottom:16px}
+.guide h2{font-family:Inter;font-size:15px;margin:0 0 8px;letter-spacing:0}
+.guide ol{margin:0;padding-left:20px;font-size:14.5px;color:#3a352f}
+.guide li{margin-bottom:6px}
+footer{color:var(--mute);font-size:12.5px;text-align:center;padding-top:8px}
+</style></head><body>
+<div class="wrap">
+  <header>
+    <div class="mark">SCALES<small>General Contracting</small></div>
+    <a class="callbtn" href="tel:+18608339789">Call 860.833.9789</a>
+  </header>
+
+  <h1>Photograph it. <em>Get a number.</em> Then Tommy calls.</h1>
+  <p class="sub">Tell us what needs doing, take one or two photos, and you get a price range in a minute. No account, no waiting on a callback that never comes.</p>
+
+  <div class="guide">
+    <h2>How to take the photo so the price is right</h2>
+    <ol>
+      <li>Stand back far enough to show the whole wall or space, not just the spot.</li>
+      <li>Hold something of a known size against the wall. A dollar bill is 6.14 inches long, and a standard credit card is 3.37 inches. The photo uses it to judge scale.</li>
+      <li>Take a second photo close up, with the tape measure visible if you have one.</li>
+      <li>Turn the light on. Dark photos hide the water damage and the soft spots.</li>
+    </ol>
+  </div>
+
+  <form id="q">
+    <div class="card">
+      <div class="field"><label for="jobType">What do you need?</label>
+        <select id="jobType" name="jobType">
+          <option value="grab_bars">Grab bars in a tub or shower</option>
+          <option value="toilet_safety">Toilet safety frame or shower bench</option>
+          <option value="handrails">Handrail on a wall</option>
+          <option value="handrail_stairs">Rails on stairs, both sides</option>
+          <option value="threshold_ramp">Small threshold ramp</option>
+          <option value="modular_ramp">Wheelchair ramp outside</option>
+          <option value="shower_conversion">Convert the tub to a step in shower</option>
+          <option value="door_widening">Widen a doorway</option>
+          <option value="lighting">Add lighting or switches</option>
+          <option value="painting_room">Painting a room</option>
+          <option value="deck_repair">Deck repair</option>
+          <option value="other">Something else, a roof, siding, plumbing, electrical</option>
+        </select>
+      </div>
+      <div class="row">
+        <div class="field"><label for="quantity">How many</label><input id="quantity" type="number" min="1" max="50" value="1"></div>
+        <div class="field"><label for="town">Town</label><input id="town" placeholder="Hartford" autocomplete="address-level2"></div>
+      </div>
+      <div class="field"><label for="measurements">Measurements, if you have them</label>
+        <input id="measurements" placeholder="tub is 60 inches, wall beside toilet is 30 inches"></div>
+    </div>
+
+    <div class="card">
+      <label>Photos of the space</label>
+      <div class="shot">
+        <label class="pick" for="photo">Add a photo<span id="pcount"></span></label>
+        <input id="photo" type="file" accept="image/*" capture="environment" multiple>
+      </div>
+      <p class="hint">Two photos max, resized on your phone before sending. They go straight to Tommy with your request.</p>
+      <div class="thumbs" id="thumbs"></div>
+    </div>
+
+    <div class="card">
+      <div class="field"><label for="customerName">Your name</label><input id="customerName" autocomplete="name" required></div>
+      <div class="row">
+        <div class="field"><label for="phone">Phone</label><input id="phone" type="tel" autocomplete="tel" required></div>
+        <div class="field"><label for="email">Email, optional</label><input id="email" type="email" autocomplete="email"></div>
+      </div>
+      <div class="field"><label for="address">Street address</label><input id="address" autocomplete="street-address"></div>
+      <div class="field"><label for="notes">Anything else</label><textarea id="notes" placeholder="Who lives there, how soon you need it, anything broken"></textarea></div>
+    </div>
+
+    <button id="go" type="submit">Get my price range</button>
+    <div class="err" id="err"></div>
+    <div class="out" id="out">
+      <div style="font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:#9aa39c">Estimate</div>
+      <div class="amt" id="amt"></div>
+      <p id="msg"></p>
+      <p>Tommy calls you to confirm the exact price on site. If you would rather not wait, <a href="tel:+18608339789">call 860.833.9789</a> now.</p>
+    </div>
+  </form>
+
+  <footer>Scales General Contracting, LLC  .  HIC-LIC #0552366  .  Hartford, CT<br>Estimates are ranges, not final prices. The written quote from Tommy is the one that counts.</footer>
+</div>
+
+<script>
+const API = "https://superagent-533538ac.base44.app/functions/scalesQuote";
+const photos = [];
+const box = document.getElementById("thumbs");
+document.getElementById("photo").addEventListener("change", async (e) => {
+  for (const f of [...e.target.files]) {
+    if (photos.length >= 2) break;
+    const data = await shrink(f);
+    if (data) { photos.push(data); const img = document.createElement("img"); img.src = data; box.appendChild(img); }
+  }
+  document.getElementById("pcount").textContent = photos.length ? "  (" + photos.length + " added)" : "";
+  e.target.value = "";
+});
+function shrink(file) {
+  return new Promise((res) => {
+    const r = new FileReader();
+    r.onload = () => {
+      const img = new Image();
+      img.onload = () => {
+        const max = 900, s = Math.min(1, max / Math.max(img.width, img.height));
+        const c = document.createElement("canvas");
+        c.width = Math.round(img.width * s); c.height = Math.round(img.height * s);
+        c.getContext("2d").drawImage(img, 0, 0, c.width, c.height);
+        res(c.toDataURL("image/jpeg", 0.68));
+      };
+      img.onerror = () => res(null);
+      img.src = r.result;
+    };
+    r.onerror = () => res(null);
+    r.readAsDataURL(file);
+  });
+}
+document.getElementById("q").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const go = document.getElementById("go"), err = document.getElementById("err");
+  go.disabled = true; go.textContent = "Sending to Tommy…"; err.style.display = "none";
+  const payload = {
+    customerName: document.getElementById("customerName").value,
+    phone: document.getElementById("phone").value,
+    email: document.getElementById("email").value,
+    address: document.getElementById("address").value,
+    town: document.getElementById("town").value,
+    jobType: document.getElementById("jobType").value,
+    quantity: Number(document.getElementById("quantity").value) || 1,
+    measurements: document.getElementById("measurements").value,
+    notes: document.getElementById("notes").value,
+    photos
+  };
+  try {
+    const r = await fetch(API, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) });
+    const d = await r.json();
+    if (!d.ok) throw new Error(d.error || "Something went wrong.");
+    document.getElementById("amt").textContent = "$" + d.estimateLow.toLocaleString() + " – $" + d.estimateHigh.toLocaleString();
+    document.getElementById("msg").textContent = d.summary;
+    document.getElementById("out").classList.add("on");
+    document.getElementById("out").scrollIntoView({ behavior: "smooth", block: "center" });
+  } catch (ex) {
+    err.textContent = ex.message + " You can call 860.833.9789 instead.";
+    err.style.display = "block";
+  }
+  go.disabled = false; go.textContent = "Get my price range";
+});
+</script>
+</body></html>
